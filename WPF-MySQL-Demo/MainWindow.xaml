@@ -83,7 +83,8 @@
                       BorderBrush="DarkGray"
                       AutoGenerateColumns="False"
                       HorizontalGridLinesBrush="Gray"
-                      VerticalGridLinesBrush="WhiteSmoke">
+                      VerticalGridLinesBrush="WhiteSmoke"
+                      MouseDoubleClick="LocationDataGrid_MouseDoubleClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding id}"
                                         Width="72"

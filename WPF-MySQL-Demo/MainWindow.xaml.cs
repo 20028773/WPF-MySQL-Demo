@@ -94,5 +94,12 @@ namespace WPF_MySQL_Demo
             locationAdd.ShowDialog();
             FillTable(FilterTextBox.Text);
         }
+
+        private void LocationDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            LocationEdit locationEdit = new LocationEdit(int.Parse(((DataRowView)((System.Windows.Controls.Primitives.Selector)sender).SelectedItem).Row.ItemArray[0].ToString()));
+            locationEdit.ShowDialog();
+            FillTable(FilterTextBox.Text);
+        }
     }
 }
